@@ -294,8 +294,8 @@ jobs:
   docker-buildx-bake-dev:
     <<: *docker-bake
     environment:
-      PHP_VERSION: 7.4 # TODO: 8.0.8beta4
-      PHP_API_VERSION: "20190902"
+      PHP_VERSION: 8.0
+      PHP_API_VERSION: "20200930"
       COMPOSER_ARGS: update --ignore-platform-reqs
       SWOOLE_VERSION: master
       REGISTRY: docker.io
